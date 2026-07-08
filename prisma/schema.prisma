@@ -1,0 +1,117 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String @unique
+  password String
+  role     String @default("user")
+
+
+  resetPasswordToken  String?
+  resetPasswordExpire DateTime?
+
+  reviews Review[]
+  orders  Order[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Product {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Float
+  category    String
+  stock       Int
+  imageUrl    String
+
+  ratings    Float @default(0)
+  numReviews Int   @default(0)
+
+  reviews    Review[]
+  orderItems OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Review {
+  id Int @id @default(autoincrement())
+
+  userId    Int
+  productId Int
+
+  name    String
+  rating  Int
+  comment String
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id Int @id @default(autoincrement())
+
+  userId Int
+
+  totalAmount Float
+
+  fullName   String
+  street     String
+  city       String
+  postalCode String
+  country    String
+
+  paymentId String?
+  status    String  @default("Pending")
+
+  user  User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OrderItem {
+  id Int @id @default(autoincrement())
+
+  orderId   Int
+  productId Int
+
+  qty   Int
+  price Float
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Contact {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model BlacklistedToken {
+  id        Int      @id @default(autoincrement())
+  token     String   @unique
+  createdAt DateTime @default(now())
+}
