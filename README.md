@@ -1,84 +1,100 @@
-# VYSTA
+# 🛒 VYSTA - E-Commerce Platform API
 
-# 🛒 E-Commerce Platform API
+![Node.js](https://img.shields.io/badge/Node.js-20-green)
+![Express](https://img.shields.io/badge/Express.js-Backend-black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-A production-ready **E-Commerce Backend API** built with **Node.js**, **Express.js**, **PostgreSQL**, and **Prisma ORM**. The project follows a scalable architecture with secure authentication, role-based authorization, rate limiting, and RESTful API design.
+A secure, scalable, and production-ready **RESTful E-Commerce Backend API** built with **Node.js**, **Express.js**, **PostgreSQL**, and **Prisma ORM**. VYSTA provides authentication, role-based authorization, shopping cart, product & order management, and advanced API protection using the **Token Bucket Rate Limiting Algorithm**.
+
+---
 
 ## 🚀 Tech Stack
 
-- **Backend:** Node.js, Express.js
-- **Database:** PostgreSQL
-- **ORM:** Prisma ORM
-- **Authentication:** JWT, BCrypt
-- **Authorization:** Role-Based Access Control (RBAC)
-- **Rate Limiting:** Token Bucket Algorithm
-- **Deployment:** Render
-- **Database Hosting:** Neon PostgreSQL
-- **API Testing:** Postman
-- **Version Control:** Git & GitHub
+| Category | Technologies |
+|----------|--------------|
+| Backend | Node.js, Express.js |
+| Database | PostgreSQL (Neon) |
+| ORM | Prisma ORM |
+| Authentication | JWT + BCrypt |
+| Authorization | Role-Based Access Control (RBAC) |
+| Security | Token Bucket Rate Limiting |
+| Deployment | Render |
+| API Testing | Postman |
+| Version Control | Git & GitHub |
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- 🔐 JWT Authentication
-- 🔑 BCrypt Password Hashing
-- 👤 Role-Based Authorization (Admin/User)
-- 🛍️ Product Management
-- 🛒 Shopping Cart
+- 🔐 Secure JWT Authentication
+- 🔑 Password Hashing using BCrypt
+- 👥 Role-Based Authorization (Admin & User)
+- 🛍️ Product CRUD Operations
+- 🛒 Shopping Cart Management
 - 📦 Order Management
-- 📄 RESTful API Architecture
-- ⚡ Prisma ORM for Efficient Database Operations
-- 🚦 Rate Limiting using **Token Bucket Algorithm**
-- 🛡️ Input Validation & Centralized Error Handling
-- 🌐 Cloud Deployment (Render + Neon PostgreSQL)
+- ⚡ Prisma ORM Integration
+- 🚦 Token Bucket Rate Limiting
+- 🛡️ Input Validation & Global Error Handling
+- 🌐 Cloud Deployment on Render & Neon PostgreSQL
+- 📄 Modular & Scalable Project Structure
 
 ---
 
-## 📂 Project Structure
+# 📁 Project Structure
 
-```
+```text
 src/
+│── config/
 │── controllers/
 │── middleware/
+│── prisma/
 │── routes/
 │── services/
-│── prisma/
 │── utils/
-│── config/
 │── app.js
-│── server.js
+└── server.js
 ```
 
 ---
 
-## 🔒 Authentication & Authorization
+# 🔒 Authentication & Authorization
+
+### Authentication
 
 - User Registration
 - User Login
-- JWT Token Generation
+- JWT Access Token
 - Protected Routes
-- Role-Based Access Control
-  - Admin
-  - User
 
-Only authorized users can access restricted resources.
+### Authorization
+
+Role-Based Access Control (RBAC)
+
+- 👑 Admin
+- 👤 User
+
+Only authorized users can access restricted resources based on their assigned roles.
 
 ---
 
-## 🚦 Rate Limiting
+# 🚦 API Security
 
-To protect APIs from abuse and brute-force attacks, the project implements a **Token Bucket Algorithm**.
+VYSTA implements a **Token Bucket Rate Limiting Algorithm** to safeguard APIs against abuse.
 
 ### Benefits
-- Prevents API spam
-- Controls request bursts
-- Improves server stability
-- Enhances API security
+
+- Prevents API Spam
+- Protects against Brute Force Attacks
+- Controls Burst Traffic
+- Improves Server Stability
+- Enhances Overall API Security
 
 ---
 
-## 🛠 API Modules
+# 🛠 API Modules
 
 - Authentication
 - Users
@@ -89,17 +105,27 @@ To protect APIs from abuse and brute-force attacks, the project implements a **T
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
+
+Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/vysta.git
+```
 
-cd ecommerce-platform
+Move to project
 
+```bash
+cd vysta
+```
+
+Install dependencies
+
+```bash
 npm install
 ```
 
-Create a `.env` file
+Create `.env`
 
 ```env
 DATABASE_URL=
@@ -107,7 +133,7 @@ JWT_SECRET=
 PORT=5000
 ```
 
-Run Prisma Migration
+Run migrations
 
 ```bash
 npx prisma migrate dev
@@ -119,7 +145,7 @@ Generate Prisma Client
 npx prisma generate
 ```
 
-Start Server
+Start the development server
 
 ```bash
 npm run dev
@@ -127,61 +153,53 @@ npm run dev
 
 ---
 
-## 📬 API Testing
+# 📬 API Testing
 
-All endpoints were tested using **Postman**.
-
----
-
-## 🌍 Deployment
-
-- Backend → Render
-- Database → Neon PostgreSQL
+API endpoints are tested using **Postman**.
 
 ---
 
-## 📈 Future Enhancements
+# 🌍 Deployment
 
-- 💳 Stripe/Razorpay Payment Integration
-- ❤️ Wishlist Feature
+| Service | Platform |
+|----------|----------|
+| Backend | Render |
+| Database | Neon PostgreSQL |
+
+---
+
+# 📈 Roadmap
+
+Upcoming features planned for future releases.
+
+- 💳 Stripe / Razorpay Integration
+- ❤️ Wishlist
 - ⭐ Product Reviews & Ratings
-- 🔍 Advanced Search & Filtering
-- 📧 Email Verification & Password Reset
+- 🔍 Search & Filtering
+- 📧 Email Verification
+- 🔄 Password Reset
 - 📦 Order Tracking
 - 🔔 Notifications
-- 📊 Admin Dashboard & Analytics
-- 🖼️ Image Upload with Cloudinary
-- 🧾 Invoice Generation (PDF)
+- 📊 Admin Dashboard
+- 🖼️ Cloudinary Image Upload
+- 🧾 PDF Invoice Generation
 - 🐳 Docker Support
 - ⚡ Redis Caching
 - 🔄 Refresh Token Authentication
-- 📱 Mobile Friendly API Documentation using Swagger
+- 📖 Swagger API Documentation
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
-Contributions, suggestions, and feature requests are welcome.
+Contributions are always welcome.
+
+Feel free to fork the repository, open issues, or submit pull requests.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-Developed with ❤️ by **Your Name**
+**Developed by Your Name**
 
-```
-
-### 💯 Bonus (GitHub par aur professional lagega)
-
-README ke top me badges laga dena:
-
-```md
-![Node.js](https://img.shields.io/badge/Node.js-20-green)
-![Express](https://img.shields.io/badge/Express.js-Backend-black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
-![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-```
-
-Aur agar screenshots, Postman collection aur Swagger docs bhi add kar doge, to README **senior-level open-source project** jaisi lagegi.
+If you found this project helpful, don't forget to ⭐ the repository.
