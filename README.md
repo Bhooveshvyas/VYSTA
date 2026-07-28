@@ -2,17 +2,17 @@
 <h3 align="center">🚀 Full Stack E-Commerce Platform</h3>
 
 <p align="center">
+  <b>Modern • Scalable • Production-Ready</b><br/>
+  Built with React, Node.js, Express, PostgreSQL & Prisma
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
   <img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js" />
   <img src="https://img.shields.io/badge/Framework-Express-black?style=for-the-badge&logo=express" />
   <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?style=for-the-badge&logo=postgresql" />
   <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=for-the-badge&logo=prisma" />
   <img src="https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge" />
-</p>
-
-<p align="center">
-  ⚡ A modern, scalable & production-ready <b>Full Stack E-Commerce Web App</b><br/>
-  built using <b>React, Node.js, Express, PostgreSQL & Prisma</b>
 </p>
 
 ---
@@ -23,7 +23,7 @@
 ---
 
 ## 📸 Screenshots
-(Add your UI screenshots here later)
+> Add UI screenshots / GIF demo here for better impact
 
 ---
 
@@ -50,7 +50,7 @@
 ### ☁️ Deployment
 - Frontend → Vercel / Netlify  
 - Backend → Render  
-- Database → Neon  
+- Database → Neon PostgreSQL  
 
 ---
 
@@ -61,8 +61,8 @@
 - 🛍️ Browse Products  
 - 🛒 Cart Management  
 - 📦 Order Placement  
-- 🔍 Search & Filter  
-- 🎨 Smooth Animations  
+- 🔍 Search & Filtering  
+- 🎨 Smooth UI Animations  
 
 ### 👑 Admin
 - ➕ Add Products  
@@ -74,12 +74,14 @@
 - JWT Authentication  
 - RBAC Authorization  
 - Token Bucket Rate Limiting  
-- Global Error Handling  
 - Input Validation  
+- Global Error Handling  
 
 ---
 
 ## 🧠 Architecture
+
+
 Frontend (React)
 ↓
 API Layer (Axios)
@@ -90,9 +92,12 @@ Prisma ORM
 ↓
 PostgreSQL Database
 
+
 ---
 
 ## 📁 Project Structure
+
+
 VYSTA/
 │── backend/
 │ ├── src/
@@ -114,6 +119,7 @@ VYSTA/
 │ │── services/
 │ │── App.jsx
 │ │── main.jsx
+
 
 ---
 
@@ -138,13 +144,14 @@ VYSTA/
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone Repo
+### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/your-username/vysta.git
 cd vysta
 2️⃣ Backend Setup
 cd backend
 npm install
+
 Create .env
 
 DATABASE_URL=
@@ -171,7 +178,7 @@ Database	Neon PostgreSQL
 📈 Roadmap
 💳 Razorpay / Stripe Integration
 ❤️ Wishlist
-⭐ Reviews
+⭐ Product Reviews
 🔔 Notifications
 📊 Admin Dashboard
 🐳 Docker Support
@@ -182,7 +189,6 @@ Bhoovesh Vyas
 
 ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
 
 <p align="center"> Made with ❤️ by Bhoovesh </p> ```
-🔥 Extra Premium Suggestions (VERY IMPORTANT)
