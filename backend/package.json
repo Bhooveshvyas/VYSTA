@@ -4,8 +4,9 @@
   "description": "Quality you can trust. Prices you'll love. Your one-stop destination for premium cleaning and hygiene products.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "prisma db push && node index.js",
+    "dev": "nodemon index.js",
+    "postinstall": "prisma generate"
   },
   "keywords": [
     "ecom"
