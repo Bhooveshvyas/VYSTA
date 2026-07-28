@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: vysta_backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: "postgresql://postgres:7987060982@postgres:5432/ecommerce"
+      UPI_VPA: "${UPI_VPA:-merchant@razorpay}"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16
+    container_name: vysta_postgres
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 7987060982
+      POSTGRES_DB: ecommerce
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
