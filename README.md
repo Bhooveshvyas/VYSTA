@@ -1,205 +1,188 @@
-# 🛒 VYSTA - E-Commerce Platform API
+<h1 align="center">🛒 VYSTA</h1>
+<h3 align="center">🚀 Full Stack E-Commerce Platform</h3>
 
-![Node.js](https://img.shields.io/badge/Node.js-20-green)
-![Express](https://img.shields.io/badge/Express.js-Backend-black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
-![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/Framework-Express-black?style=for-the-badge&logo=express" />
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?style=for-the-badge&logo=postgresql" />
+  <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=for-the-badge&logo=prisma" />
+  <img src="https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge" />
+</p>
 
-A secure, scalable, and production-ready **RESTful E-Commerce Backend API** built with **Node.js**, **Express.js**, **PostgreSQL**, and **Prisma ORM**. VYSTA provides authentication, role-based authorization, shopping cart, product & order management, and advanced API protection using the **Token Bucket Rate Limiting Algorithm**.
+<p align="center">
+  ⚡ A modern, scalable & production-ready <b>Full Stack E-Commerce Web App</b><br/>
+  built using <b>React, Node.js, Express, PostgreSQL & Prisma</b>
+</p>
+
+---
+
+## 🔥 Live Preview
+🚧 Coming Soon...
+
+---
+
+## 📸 Screenshots
+(Add your UI screenshots here later)
 
 ---
 
 ## 🚀 Tech Stack
 
-| Category | Technologies |
-|----------|--------------|
-| Backend | Node.js, Express.js |
-| Database | PostgreSQL (Neon) |
-| ORM | Prisma ORM |
-| Authentication | JWT + BCrypt |
-| Authorization | Role-Based Access Control (RBAC) |
-| Security | Token Bucket Rate Limiting |
-| Deployment | Render |
-| API Testing | Postman |
-| Version Control | Git & GitHub |
+### 🖥️ Frontend
+- React.js  
+- React Router DOM  
+- Context API  
+- Tailwind CSS  
+- Axios  
+- React Hook Form  
+- Framer Motion  
+
+### ⚙️ Backend
+- Node.js  
+- Express.js  
+- PostgreSQL (Neon)  
+- Prisma ORM  
+- JWT Authentication  
+- BCrypt  
+- Role-Based Access Control  
+
+### ☁️ Deployment
+- Frontend → Vercel / Netlify  
+- Backend → Render  
+- Database → Neon  
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-- 🔐 Secure JWT Authentication
-- 🔑 Password Hashing using BCrypt
-- 👥 Role-Based Authorization (Admin & User)
-- 🛍️ Product CRUD Operations
-- 🛒 Shopping Cart Management
-- 📦 Order Management
-- ⚡ Prisma ORM Integration
-- 🚦 Token Bucket Rate Limiting
-- 🛡️ Input Validation & Global Error Handling
-- 🌐 Cloud Deployment on Render & Neon PostgreSQL
-- 📄 Modular & Scalable Project Structure
+### 👤 User
+- 🔐 Authentication (Signup/Login)  
+- 🛍️ Browse Products  
+- 🛒 Cart Management  
+- 📦 Order Placement  
+- 🔍 Search & Filter  
+- 🎨 Smooth Animations  
 
----
+### 👑 Admin
+- ➕ Add Products  
+- ✏️ Update/Delete Products  
+- 📦 Manage Orders  
+- 👥 Manage Users  
 
-# 📁 Project Structure
-
-```text
-src/
-│── config/
-│── controllers/
-│── middleware/
-│── prisma/
-│── routes/
-│── services/
-│── utils/
-│── app.js
-└── server.js
-```
+### ⚡ Backend
+- JWT Authentication  
+- RBAC Authorization  
+- Token Bucket Rate Limiting  
+- Global Error Handling  
+- Input Validation  
 
 ---
 
-# 🔒 Authentication & Authorization
-
-### Authentication
-
-- User Registration
-- User Login
-- JWT Access Token
-- Protected Routes
-
-### Authorization
-
-Role-Based Access Control (RBAC)
-
-- 👑 Admin
-- 👤 User
-
-Only authorized users can access restricted resources based on their assigned roles.
+## 🧠 Architecture
+Frontend (React)
+↓
+API Layer (Axios)
+↓
+Backend (Node + Express)
+↓
+Prisma ORM
+↓
+PostgreSQL Database
 
 ---
 
-# 🚦 API Security
-
-VYSTA implements a **Token Bucket Rate Limiting Algorithm** to safeguard APIs against abuse.
-
-### Benefits
-
-- Prevents API Spam
-- Protects against Brute Force Attacks
-- Controls Burst Traffic
-- Improves Server Stability
-- Enhances Overall API Security
+## 📁 Project Structure
+VYSTA/
+│── backend/
+│ ├── src/
+│ │── controllers/
+│ │── routes/
+│ │── middleware/
+│ │── services/
+│ │── prisma/
+│ │── utils/
+│ │── app.js
+│ │── server.js
+│
+│── frontend/
+│ ├── src/
+│ │── components/
+│ │── pages/
+│ │── context/
+│ │── hooks/
+│ │── services/
+│ │── App.jsx
+│ │── main.jsx
 
 ---
 
-# 🛠 API Modules
+## 🔒 Authentication & Authorization
 
-- Authentication
-- Users
-- Products
-- Categories
-- Cart
-- Orders
+- JWT-based Authentication  
+- Secure Password Hashing (BCrypt)  
+- Role-Based Access Control (Admin/User)  
+- Protected Routes  
 
 ---
 
-# ⚙️ Installation
+## 🚦 API Security
 
-Clone the repository
+🛡️ Token Bucket Rate Limiting
 
+- Prevents API abuse  
+- Protects against brute force attacks  
+- Handles traffic spikes  
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repo
 ```bash
 git clone https://github.com/your-username/vysta.git
-```
-
-Move to project
-
-```bash
 cd vysta
-```
-
-Install dependencies
-
-```bash
+2️⃣ Backend Setup
+cd backend
 npm install
-```
+Create .env
 
-Create `.env`
-
-```env
 DATABASE_URL=
 JWT_SECRET=
 PORT=5000
-```
 
-Run migrations
+Run:
 
-```bash
 npx prisma migrate dev
-```
-
-Generate Prisma Client
-
-```bash
 npx prisma generate
-```
-
-Start the development server
-
-```bash
 npm run dev
-```
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+📬 API Testing
+Postman
+Thunder Client
+🌍 Deployment
+Service	Platform
+Frontend	Vercel / Netlify
+Backend	Render
+Database	Neon PostgreSQL
+📈 Roadmap
+💳 Razorpay / Stripe Integration
+❤️ Wishlist
+⭐ Reviews
+🔔 Notifications
+📊 Admin Dashboard
+🐳 Docker Support
+⚡ Redis Caching
+🧑‍💻 Author
 
----
+Bhoovesh Vyas
 
-# 📬 API Testing
+⭐ Support
 
-API endpoints are tested using **Postman**.
+If you like this project, consider giving it a ⭐ on GitHub!
 
----
-
-# 🌍 Deployment
-
-| Service | Platform |
-|----------|----------|
-| Backend | Render |
-| Database | Neon PostgreSQL |
-
----
-
-# 📈 Roadmap
-
-Upcoming features planned for future releases.
-
-- 💳 Stripe / Razorpay Integration
-- ❤️ Wishlist
-- ⭐ Product Reviews & Ratings
-- 🔍 Search & Filtering
-- 📧 Email Verification
-- 🔄 Password Reset
-- 📦 Order Tracking
-- 🔔 Notifications
-- 📊 Admin Dashboard
-- 🖼️ Cloudinary Image Upload
-- 🧾 PDF Invoice Generation
-- 🐳 Docker Support
-- ⚡ Redis Caching
-- 🔄 Refresh Token Authentication
-- 📖 Swagger API Documentation
-
----
-
-# 🤝 Contributing
-
-Contributions are always welcome.
-
-Feel free to fork the repository, open issues, or submit pull requests.
-
----
-
-# 👨‍💻 Author
-
-**Developed by Your Name**
-
-If you found this project helpful, don't forget to ⭐ the repository.
+<p align="center"> Made with ❤️ by Bhoovesh </p> ```
+🔥 Extra Premium Suggestions (VERY IMPORTANT)
