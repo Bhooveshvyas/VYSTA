@@ -15,7 +15,7 @@ const protect = async (req, res, next) => {
 
             if (blacklisted) {
                 return res.status(401).json({
-                    message: "Token has been revoked. Please login again."
+                    message: "Token has been revoked, Means the user is Logged out. Please login again."
                 });
             }
             const decoded = jwt.verify(token, process.env.JWT_SECRET);
