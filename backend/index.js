@@ -10,7 +10,7 @@ const app = express();
 
 // app.use(cors());
 app.use(cors({
-    origin: ["https://vysta-nqey.vercel.app", "http://localhost:5173"],
+    origin: ["https://vysta-nqey-git-main-bhoovesh-vyas-projects.vercel.app","https://vysta-nqey.vercel.app", "http://localhost:5173"],
     credentials: true
 }));
 
