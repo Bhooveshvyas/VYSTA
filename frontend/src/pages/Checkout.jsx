@@ -57,7 +57,7 @@ export default function Checkout() {
     })
   }, [])
 
-  const openRazorpayCheckout = useCallback(async (orderData) => {
+  const openRazorpayCheckout = useCallback(async (orderData, order) => {
     const scriptLoaded = await loadRazorpayScript()
     if (!scriptLoaded) {
       toast.error('Failed to load payment gateway. Please refresh and try again.')
@@ -67,11 +67,11 @@ export default function Checkout() {
     return new Promise((resolve, reject) => {
       const options = {
         key: keyId,
-        amount: paymentOrder.amount,
-        currency: paymentOrder.currency,
+        amount: order.amount,
+        currency: order.currency,
         name: 'VYSTA',
         description: `Payment for ${orderData.items.length} items`,
-        order_id: paymentOrder.id,
+        order_id: order.id,
         method: { upi: true },
         handler: async function (response) {
           try {
@@ -100,7 +100,7 @@ export default function Checkout() {
       rzp.on('payment.failed', () => reject(new Error('Payment failed')))
       rzp.open()
     })
-  }, [keyId, loadRazorpayScript, paymentOrder])
+  }, [keyId, loadRazorpayScript])
 
   const handlePayment = useCallback(async (orderData) => {
     const scriptLoaded = await loadRazorpayScript()
@@ -116,19 +116,19 @@ export default function Checkout() {
       setQrCode(order.qrCode)
       setShowPaymentModal(true)
       return new Promise((resolve, reject) => {
-        paymentResolver.current = { resolve, reject, orderData }
+        paymentResolver.current = { resolve, reject, orderData, order }
       })
     }
 
-    return await openRazorpayCheckout(orderData)
+    return await openRazorpayCheckout(orderData, order)
   }, [loadRazorpayScript, openRazorpayCheckout])
 
   const handlePayWithRazorpay = async () => {
     if (!paymentResolver.current) return
-    const { resolve, reject, orderData } = paymentResolver.current
+    const { resolve, reject, orderData, order } = paymentResolver.current
     setShowPaymentModal(false)
     try {
-      const paymentId = await openRazorpayCheckout(orderData)
+      const paymentId = await openRazorpayCheckout(orderData, order)
       resolve(paymentId)
     } catch (err) {
       reject(err)
