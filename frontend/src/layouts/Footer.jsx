@@ -66,23 +66,26 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-2 text-sm">
                 <FiMapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary-400" />
-                <span>123 Business Street, City, India</span>
+                <span>405/2 Station Road, Shajapur, India</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <FiMail className="h-4 w-4 shrink-0 text-primary-400" />
-                <span>support@vysta.com</span>
+                <span>temp.cppp@vysta.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <FiPhone className="h-4 w-4 shrink-0 text-primary-400" />
-                <span>+91 12345 67890</span>
+                <span>+91 7987060982</span>
               </div>
             </div>
           </div>
         </div>
+<div className="mt-8 border-t border-dark-700 pt-8 text-center text-sm">
+  <p>&copy; {new Date().getFullYear()} VYSTA. All rights reserved.</p>
 
-        <div className="mt-8 border-t border-dark-700 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} VYSTA. All rights reserved.</p>
-        </div>
+  <p className="mt-2 text-gray-400">
+    Developed by <span className="font-semibold text-white">Bhoovesh Vyas</span>
+  </p>
+</div>
       </div>
     </footer>
   )
