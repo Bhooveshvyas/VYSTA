@@ -8,9 +8,9 @@ const loginLimiter = createTokenBucketLimiter({
 });
 
 const registerLimiter = createTokenBucketLimiter({
-    capacity: 10,
-    refillRate: 10,
-    refillIntervalMs: 60 * 60 * 1000, // every 1 hr
+    capacity: 100,
+    refillRate: 100,
+    refillIntervalMs: 15 * 60 * 1000, // every 15 min
     message: "Too many registrations",
 });
 

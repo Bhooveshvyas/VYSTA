@@ -73,7 +73,11 @@ async function getMyOrders(req, res) {
                 userId: req.user.id
             },
             include: {
-                items: true
+                items: {
+                    include: {
+                        product: true
+                    }
+                }
             }
         });
         return res.status(200).json({
@@ -203,4 +207,67 @@ async function getOrderById(req, res) {
     }
 }
 
-module.exports = { addOrderItems, getOrders, getMyOrders, updateOrderStatus, updateOrder, getOrderById, deleteOrder }
+async function getMyOrderById(req, res) {
+    const orderId = Number(req.params.id);
+    try {
+        const order = await prisma.order.findFirst({
+            where: {
+                id: orderId,
+                userId: req.user.id
+            },
+            include: {
+                items: {
+                    include: {
+                        product: true
+                    }
+                }
+            }
+        });
+        if (!order) {
+            return res.status(404).json({
+                message: "Order not found",
+                success: false
+            });
+        }
+        return res.status(200).json({
+            message: "Order fetched successfully",
+            success: true,
+            order
+        });
+    } catch (error) {
+        res.status(500).json({
+            message: error.message,
+            success: false
+        });
+    }
+}
+
+async function checkProductPurchase(req, res) {
+    const productId = Number(req.params.productId);
+    try {
+        const orderItem = await prisma.orderItem.findFirst({
+            where: {
+                productId: productId,
+                order: {
+                    userId: req.user.id,
+                    status: 'Delivered'
+                }
+            },
+            include: {
+                order: true
+            }
+        });
+
+        return res.status(200).json({
+            hasPurchased: !!orderItem,
+            order: orderItem?.order || null
+        });
+    } catch (error) {
+        res.status(500).json({
+            message: error.message,
+            success: false
+        });
+    }
+}
+
+module.exports = { addOrderItems, getOrders, getMyOrders, getMyOrderById, updateOrderStatus, updateOrder, getOrderById, deleteOrder, checkProductPurchase }

@@ -18,6 +18,7 @@ import Cart from '../pages/Cart'
 import Checkout from '../pages/Checkout'
 import Profile from '../pages/Profile'
 import MyOrders from '../pages/MyOrders'
+import OrderDetails from '../pages/OrderDetails'
 
 import AdminDashboard from '../pages/admin/AdminDashboard'
 import AdminProducts from '../pages/admin/AdminProducts'
@@ -44,6 +45,7 @@ export default function AppRoutes() {
         <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
         <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
         <Route path="/my-orders" element={<ProtectedRoute><MyOrders /></ProtectedRoute>} />
+        <Route path="/my-orders/:id" element={<ProtectedRoute><OrderDetails /></ProtectedRoute>} />
 
         {/* Admin */}
         <Route path="/admin" element={<AdminRoute><AdminLayout /></AdminRoute>}>
