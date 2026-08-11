@@ -206,14 +206,14 @@ Database	Neon PostgreSQL
 🐳 Docker Support
 
 ⚡ Redis Caching
+<div align="center">
 
-🧑‍💻 Author
+### 🧑‍💻 Author
 
-Bhoovesh Vyas
+**Bhoovesh Vyas**
 
-⭐ Support
+⭐ If you like this project, give it a star on GitHub!
 
-If you like this project, give it a ⭐ on GitHub!
+Made with ❤️ by **Bhoovesh Vyas**
 
-<p align="center"> Made with ❤️ by Bhoovesh Vyas </p> ```
-Screenshot layout
+</div>
