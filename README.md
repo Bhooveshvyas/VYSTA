@@ -23,6 +23,8 @@ https://vysta-nqey.vercel.app/
 
 ## 📸 Screenshots
 > Add UI screenshots / GIF demo here for better impact
+> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7dec9469-f0a0-4ec4-9ca2-b187fcd45b93" />
+
 
 ---
 
