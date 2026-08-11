@@ -35,8 +35,7 @@ https://vysta-nqey.vercel.app/
 <p align="center">
   <img src="https://github.com/user-attachments/assets/799d67af-724d-4fd0-af57-03d18802c333" width="32%" />
   <img src="https://github.com/user-attachments/assets/c77aab58-05f3-4e5d-865c-fcf927841aba" width="32%" />
-  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e01bd837-3912-4c3d-a4ca-812975580fe2" />
-
+  <img src="https://github.com/user-attachments/assets/e01bd837-3912-4c3d-a4ca-812975580fe2" width="32%"/>
 </p>
 
 ---
