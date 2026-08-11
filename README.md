@@ -145,3 +145,99 @@ VYSTA/
     │   ├── services/
     │   ├── App.jsx
     │   └── main.jsx
+🔒 Authentication & Authorization
+JWT-based Authentication
+Secure Password Hashing (BCrypt)
+Role-Based Access Control (Admin/User)
+Protected Routes
+🚦 API Security
+
+🛡️ Token Bucket Rate Limiting
+
+Prevents API abuse
+Protects against brute force attacks
+Handles traffic spikes
+⚙️ Installation
+1️⃣ Clone Repository
+git clone https://github.com/your-username/vysta.git
+cd vysta
+2️⃣ Backend Setup
+cd backend
+npm install
+
+Create .env
+
+DATABASE_URL=
+JWT_SECRET=
+PORT=5000
+
+Run:
+
+npx prisma migrate dev
+npx prisma generate
+npm run dev
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+📬 API Testing
+
+Postman
+
+Thunder Client
+
+🌍 Deployment
+Service	Platform
+Frontend	Vercel
+Backend	Render
+Database	Neon PostgreSQL
+📈 Roadmap
+
+💳 Razorpay / Stripe Integration
+
+❤️ Wishlist
+
+⭐ Product Reviews
+
+🔔 Notifications
+
+📊 Admin Dashboard
+
+🐳 Docker Support
+
+⚡ Redis Caching
+
+🧑‍💻 Author
+
+Bhoovesh Vyas
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+<p align="center"> Made with ❤️ by Bhoovesh Vyas </p> ```
+Screenshot layout
+
+This will change your current:
+
+5 screenshots vertically
+
+into:
+
+3 screenshots
+
+[ Screenshot 1 ] [ Screenshot 2 ] [ Screenshot 3 ]
+
+then
+
+[ Screenshot 4 ] [ Screenshot 5 ]
+
+So it takes considerably less vertical space while still looking clean on GitHub.
+
+And the very bottom will now show only:
+
+Made with ❤️ by Bhoovesh Vyas
+
+instead of the raw:
+
+`<p align="center"> Made with ❤️ by Bhoovesh </p> ````
