@@ -206,9 +206,8 @@ Database	Neon PostgreSQL
 🐳 Docker Support
 
 ⚡ Redis Caching
-<div align="center">
 
-### 🧑‍💻 Author
+ 🧑‍💻 Author
 
 **Bhoovesh Vyas**
 
@@ -216,4 +215,3 @@ Database	Neon PostgreSQL
 
 Made with ❤️ by **Bhoovesh Vyas**
 
-</div>
