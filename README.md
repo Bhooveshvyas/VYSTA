@@ -217,27 +217,3 @@ If you like this project, give it a ⭐ on GitHub!
 
 <p align="center"> Made with ❤️ by Bhoovesh Vyas </p> ```
 Screenshot layout
-
-This will change your current:
-
-5 screenshots vertically
-
-into:
-
-3 screenshots
-
-[ Screenshot 1 ] [ Screenshot 2 ] [ Screenshot 3 ]
-
-then
-
-[ Screenshot 4 ] [ Screenshot 5 ]
-
-So it takes considerably less vertical space while still looking clean on GitHub.
-
-And the very bottom will now show only:
-
-Made with ❤️ by Bhoovesh Vyas
-
-instead of the raw:
-
-`<p align="center"> Made with ❤️ by Bhoovesh </p> ````
