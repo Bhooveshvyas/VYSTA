@@ -1,4 +1,7 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e01bd837-3912-4c3d-a4ca-812975580fe2" /><h1 align="center">🛒 VYSTA</h1>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e01bd837-3912-4c3d-a4ca-812975580fe2" />
+
+<h1 align="center">🛒 VYSTA</h1>
+
 <h3 align="center">🚀 Full Stack E-Commerce Platform</h3>
 
 <p align="center">
@@ -13,32 +16,35 @@
   <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?style=for-the-badge&logo=postgresql" />
   <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=for-the-badge&logo=prisma" />
   <img src="https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge" />
-  <!-- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a71ef56-a44f-49ca-a765-dc39eb4ef42f" /> -->
-
 </p>
 
 ---
 
 ## 🔥 Live Preview
+
 https://vysta-nqey.vercel.app/
+
 ---
 
 ## 📸 Screenshots
-> Add UI screenshots / GIF demo here for better impact
-> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7dec9469-f0a0-4ec4-9ca2-b187fcd45b93" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b9120d0-e87b-47c9-b577-002b6e32ed6c" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b963dd99-652d-4ad4-a53f-25fca71d455c" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/799d67af-724d-4fd0-af57-03d18802c333" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c77aab58-05f3-4e5d-865c-fcf927841aba" />
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7dec9469-f0a0-4ec4-9ca2-b187fcd45b93" width="32%" />
+  <img src="https://github.com/user-attachments/assets/8b9120d0-e87b-47c9-b577-002b6e32ed6c" width="32%" />
+  <img src="https://github.com/user-attachments/assets/b963dd99-652d-4ad4-a53f-25fca71d455c" width="32%" />
+</p>
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/799d67af-724d-4fd0-af57-03d18802c333" width="32%" />
+  <img src="https://github.com/user-attachments/assets/c77aab58-05f3-4e5d-865c-fcf927841aba" width="32%" />
+</p>
 
 ---
 
 ## 🚀 Tech Stack
 
 ### 🖥️ Frontend
+
 - React.js  
 - React Router DOM  
 - Context API  
@@ -48,6 +54,7 @@ https://vysta-nqey.vercel.app/
 - Framer Motion  
 
 ### ⚙️ Backend
+
 - Node.js  
 - Express.js  
 - PostgreSQL (Neon)  
@@ -57,7 +64,8 @@ https://vysta-nqey.vercel.app/
 - Role-Based Access Control  
 
 ### ☁️ Deployment
-- Frontend → Vercel / Netlify  
+
+- Frontend → Vercel  
 - Backend → Render  
 - Database → Neon PostgreSQL  
 
@@ -66,6 +74,7 @@ https://vysta-nqey.vercel.app/
 ## ✨ Features
 
 ### 👤 User
+
 - 🔐 Authentication (Signup/Login)  
 - 🛍️ Browse Products  
 - 🛒 Cart Management  
@@ -74,12 +83,14 @@ https://vysta-nqey.vercel.app/
 - 🎨 Smooth UI Animations  
 
 ### 👑 Admin
+
 - ➕ Add Products  
 - ✏️ Update/Delete Products  
 - 📦 Manage Orders  
 - 👥 Manage Users  
 
 ### ⚡ Backend
+
 - JWT Authentication  
 - RBAC Authorization  
 - Token Bucket Rate Limiting  
@@ -90,114 +101,48 @@ https://vysta-nqey.vercel.app/
 
 ## 🧠 Architecture
 
-
 Frontend (React)
-↓
-API Layer (Axios)
-↓
-Backend (Node + Express)
-↓
-Prisma ORM
-↓
-PostgreSQL Database
 
+↓
+
+API Layer (Axios)
+
+↓
+
+Backend (Node + Express)
+
+↓
+
+Prisma ORM
+
+↓
+
+PostgreSQL Database
 
 ---
 
 ## 📁 Project Structure
 
-
+```text
 VYSTA/
->│── backend/
->│ ├── src/
->│ │── controllers/
->│ │── routes/
->│ │── middleware/
->│ │── services/
->│ │── prisma/
->│ │── utils/
->│ │── app.js
->│ │── server.js
->│
->│── frontend/
->│ ├── src/
->│ │── components/
->│ │── pages/
->│ │── context/
->│ │── hooks/
->│ │── services/
->│ │── App.jsx
->│ │── main.jsx
-
-
----
-
-## 🔒 Authentication & Authorization
-
-- JWT-based Authentication  
-- Secure Password Hashing (BCrypt)  
-- Role-Based Access Control (Admin/User)  
-- Protected Routes  
-
----
-
-## 🚦 API Security
-
-🛡️ Token Bucket Rate Limiting
-
-- Prevents API abuse  
-- Protects against brute force attacks  
-- Handles traffic spikes  
-
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/your-username/vysta.git
-cd vysta
-2️⃣ Backend Setup
-cd backend
-npm install
-
-Create .env
-
-DATABASE_URL=
-JWT_SECRET=
-PORT=5000
-
-Run:
-
-npx prisma migrate dev
-npx prisma generate
-npm run dev
-3️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
-📬 API Testing
-Postman
-Thunder Client
-🌍 Deployment
-Service	Platform
-Frontend	Vercel / Netlify
-Backend	Render
-Database	Neon PostgreSQL
-📈 Roadmap
-💳 Razorpay / Stripe Integration
-❤️ Wishlist
-⭐ Product Reviews
-🔔 Notifications
-📊 Admin Dashboard
-🐳 Docker Support
-⚡ Redis Caching
-🧑‍💻 Author
-
-Bhoovesh Vyas
-
-⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
-
-<p align="center"> Made with ❤️ by Bhoovesh </p> ```
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── middleware/
+│   │   ├── services/
+│   │   ├── prisma/
+│   │   ├── utils/
+│   │   ├── app.js
+│   │   └── server.js
+│
+└── frontend/
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   ├── context/
+    │   ├── hooks/
+    │   ├── services/
+    │   ├── App.jsx
+    │   └── main.jsx
