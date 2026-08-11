@@ -13,6 +13,8 @@
   <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?style=for-the-badge&logo=postgresql" />
   <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=for-the-badge&logo=prisma" />
   <img src="https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge" />
+  <!-- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a71ef56-a44f-49ca-a765-dc39eb4ef42f" /> -->
+
 </p>
 
 ---
@@ -27,7 +29,7 @@ https://vysta-nqey.vercel.app/
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b9120d0-e87b-47c9-b577-002b6e32ed6c" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b963dd99-652d-4ad4-a53f-25fca71d455c" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/799d67af-724d-4fd0-af57-03d18802c333" />
-![Uploading image.png…]()
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c77aab58-05f3-4e5d-865c-fcf927841aba" />
 
 
 
