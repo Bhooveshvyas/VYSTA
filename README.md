@@ -1,4 +1,4 @@
-<h1 align="center">🛒 VYSTA</h1>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e01bd837-3912-4c3d-a4ca-812975580fe2" /><h1 align="center">🛒 VYSTA</h1>
 <h3 align="center">🚀 Full Stack E-Commerce Platform</h3>
 
 <p align="center">
@@ -108,26 +108,26 @@ PostgreSQL Database
 
 
 VYSTA/
-│── backend/
-│ ├── src/
-│ │── controllers/
-│ │── routes/
-│ │── middleware/
-│ │── services/
-│ │── prisma/
-│ │── utils/
-│ │── app.js
-│ │── server.js
-│
-│── frontend/
-│ ├── src/
-│ │── components/
-│ │── pages/
-│ │── context/
-│ │── hooks/
-│ │── services/
-│ │── App.jsx
-│ │── main.jsx
+>│── backend/
+>│ ├── src/
+>│ │── controllers/
+>│ │── routes/
+>│ │── middleware/
+>│ │── services/
+>│ │── prisma/
+>│ │── utils/
+>│ │── app.js
+>│ │── server.js
+>│
+>│── frontend/
+>│ ├── src/
+>│ │── components/
+>│ │── pages/
+>│ │── context/
+>│ │── hooks/
+>│ │── services/
+>│ │── App.jsx
+>│ │── main.jsx
 
 
 ---
