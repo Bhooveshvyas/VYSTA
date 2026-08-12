@@ -5,9 +5,9 @@ const categoryIcons = {
   'Cleaning Supplies': '🧹',
   'Home Essentials': '🏠',
   'Personal Care': '🧴',
-  Kitchen: '🍳',
-  Laundry: '🧺',
-  Disinfectants: '🧪',
+  'Kitchen': '🍳',
+  'Laundry': '🧺',
+  'Disinfectants': '🧪',
   'Paper Products': '📄',
   'Eco-Friendly': '🌿',
 }

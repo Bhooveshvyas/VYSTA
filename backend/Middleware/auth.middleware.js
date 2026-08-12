@@ -18,6 +18,7 @@ const protect = async (req, res, next) => {
                     message: "Token has been revoked, Means the user is Logged out. Please login again."
                 });
             }
+            
             const decoded = jwt.verify(token, process.env.JWT_SECRET);
             req.user = await prisma.user.findUnique({
                 where: { id: decoded.id },
